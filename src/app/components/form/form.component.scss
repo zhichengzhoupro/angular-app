@@ -1,0 +1,19 @@
+h2 {
+  text-align: center;
+}
+
+.people_list {
+  margin: 0 auto;
+  padding: 20px;
+  width: 400px;
+  border: 1px solid black;
+
+  li {
+    line-height: 50px;
+    height: 50px;
+
+    .input_name {
+      width: 300px;
+    }
+  }
+}

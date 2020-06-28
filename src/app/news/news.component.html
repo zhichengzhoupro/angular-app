@@ -1,0 +1,32 @@
+<h2>  {{title}}</h2>
+
+<div [title]="title" > fdsfds</div>
+
+<div [innerHTML]="content"></div>
+
+<div>
+  <ol>
+    <li *ngFor="let element of arr">
+      {{element}}
+    </li>
+  </ol>
+
+</div>
+
+<div>
+  <ol>
+    <li *ngFor="let item of news; let key=index">
+      {{key}} -- {{item.title}} -- {{item.content}}
+    </li>
+  </ol>
+
+</div>
+
+<div>
+  {{title | uppercase}}
+</div>
+<div>
+  <input type="text"  [(ngModel)]="title" (keydown)="keyDown($event)"  >
+
+</div>
+<img [src]="imagePath" alt="fdsfds">
