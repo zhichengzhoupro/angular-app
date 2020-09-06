@@ -8,18 +8,26 @@ import { NewsComponent } from './news/news.component';
 import { FormComponent } from './components/form/form.component';
 import { SearchComponent } from './components/search/search.component';
 import {StorageService} from './services/storage.service';
+import {HttpClientModule} from '@angular/common/http';
+import { ShoppingComponent } from './components/shopping/shopping.component';
+import { FavorisComponent } from './components/favoris/favoris.component';
+import { AccountComponent } from './components/account/account.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NewsComponent,
     FormComponent,
-    SearchComponent
+    SearchComponent,
+    ShoppingComponent,
+    FavorisComponent,
+    AccountComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [StorageService],
   bootstrap: [AppComponent]
